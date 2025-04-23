@@ -4,5 +4,5 @@ jobs:
   Testing:
    runs-on: ubuntu-latest
    steps:
-     -name: testing workflow
-      run : echo "Workflow works!"
+     - name: testing workflow
+       run : echo "Workflow works!"
