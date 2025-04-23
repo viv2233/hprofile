@@ -14,6 +14,7 @@ jobs:
 
       - name: Checkstyle
         run: mvn checkstyle:checkstyle
+        
   BUILD_AND_PUBLISH:
     runs-on: ubuntu-latest
     steps:
