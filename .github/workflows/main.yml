@@ -14,7 +14,7 @@ jobs:
 
       - name: Checkstyle
         run: mvn checkstyle:checkstyle
-        
+
   BUILD_AND_PUBLISH:
     runs-on: ubuntu-latest
     steps:
@@ -31,7 +31,7 @@ jobs:
         uses: appleboy/docker-ecr-action@master
         with:
          access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-         secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+         secret_key: ${{ secrets.AWS_SECRET_ACESS_KEY }}
          registry: ${{ secrets.REGISTRY }}
          repo: actapp
          region: ${{ env.AWS_REGION }}
